@@ -1,0 +1,60 @@
+#parentDiv {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    place-items: center;
+}
+
+
+#upperDiv {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+#upperDiv input {
+    font-size: 25px;
+}
+
+#upperDiv button {
+    background-color: white;
+    border-left: none;
+    padding: 15px;
+}
+
+#childMiddleDiv {
+    border: 1px solid;
+}
+
+#childMiddleDiv table {
+    width: 100%;
+}
+
+#childMiddleDiv table tr td {
+    border: none;
+}
+
+#upperMiddleDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#upperMiddleDiv button {
+    border: none;
+    background-color: white;
+}
+
+
+table {
+    border-collapse: collapse;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+tr td {
+    border: 1px solid;
+    padding: 15px;
+}
