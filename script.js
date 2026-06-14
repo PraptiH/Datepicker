@@ -11,7 +11,7 @@ const calendarIcon = document.getElementById('calendarIcon')
 const currentDate = new Date()
 let currentYear = currentDate.getFullYear()
 let currentMonth = currentDate.getMonth()
-let startYear = currentYear - 25
+let startYear = currentYear - 26
 
 
 const months = ["January", "February", "March", "April", "May", "June",
