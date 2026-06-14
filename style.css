@@ -1,36 +1,60 @@
+body {
+    background-color: rgb(179, 191, 245);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 #parentDiv {
-    width: 50%;
+    width: 700px;
     margin: auto;
     display: grid;
     place-items: center;
+    border: 1px solid;
+    background-color: rgb(235, 240, 255);
+    padding: 30px 0;
+    border: navajowhite;
+    border-radius: 20px;
 }
 
 
 #upperDiv {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid rgb(251, 249, 247);
+    border-radius: 10px;
 }
 
-#upperDiv input {
+#todaysDate {
+    color: black;
     font-size: 25px;
+    border: none;
+    background-color: rgb(235, 240, 255);
 }
 
-#upperDiv button {
+#dropdownYear {
     background-color: white;
     border-left: none;
-    padding: 15px;
+    padding-top: 5px;
+    cursor: pointer;
 }
 
-#childMiddleDiv {
-    border: 1px solid;
+.calendarIcon{
+    cursor: pointer;
 }
 
 #childMiddleDiv table {
     width: 100%;
 }
 
-#childMiddleDiv table tr td {
-    border: none;
+.calendarBody {
+    border-collapse: separate;
+    border-spacing: 15px;
+    border-radius: 10px;
 }
 
 #upperMiddleDiv {
@@ -44,7 +68,7 @@
 
 #upperMiddleDiv button {
     border: none;
-    background-color: white;
+    cursor: pointer;
 }
 
 
@@ -57,4 +81,35 @@ table {
 tr td {
     border: 1px solid;
     padding: 15px;
+}
+
+#childMiddleDiv td.date,
+#childMiddleDiv td.otherMonth {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: rgba(103, 86, 69, 0.326);
+    padding: 20px;
+}
+
+#childMiddleDiv td.currentDate {
+    background-color: rgba(0, 0, 128, 0.522);
+    color: black;
+    border-radius: 100%;
+}
+
+#childMiddleDiv td.otherMonth {
+    background-color: rgba(184, 179, 174, 0.134);
+    color: rgb(84, 69, 69);
+}
+
+#selectYear {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    font-size: 15px;
+    width: 60px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
 }
